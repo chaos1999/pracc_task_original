@@ -1,0 +1,500 @@
+/*desktop*/
+
+/**/
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?hkxijx');
+  src:  url('fonts/icomoon.eot?hkxijx#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?hkxijx') format('truetype'),
+    url('fonts/icomoon.woff?hkxijx') format('woff'),
+    url('fonts/icomoon.svg?hkxijx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+    box-sizing:border-box;       /*lets use the percentages*/
+    margin : 0;
+    padding : 0;
+}
+
+#base{
+  width: 35%;
+  height: 100vh;
+  float:left;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+}
+
+#background{                          /*the picture*/
+  width: 65%;
+  height:100vh;
+  float:right;
+}
+
+body{
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8vw;
+  line-height: 2.8vh;
+  color: #6A707B;
+}
+
+header{                                     /*to make the mobile look possible*/
+  position:absolute;
+}
+
+ul{
+  line-height: 1.7vh;      /*all listsS*/
+  list-style-type:none;
+  text-align: center;
+  margin-top: 11.5vh;
+  margin-left:6vw;
+}
+
+li{                              
+  display:inline;
+  padding:0.7vw;
+}
+
+li>a{
+  color: #6A707B;                                     /*list links*/
+  text-decoration:none; 
+}
+
+.icon-Union-good:before {                         /*logo*/ 
+  content: "\e900";
+  color: #4066a5;
+  float:left;
+  font-size:2vw; 
+  margin-top:-2vh; /*it was positioned too low*/
+  margin-right:1vw;
+}
+
+.icon-pineapple:before{                                  
+  content: "\70";
+  color: #131821;
+  float:left;
+  font-size:0.8vw;
+}
+#v1{                              /*for the changing message*/
+  display:block;
+}
+
+#v2{
+  display:none;
+  margin-top:30vh;
+}
+
+.icon-Cup:before {
+  content: "\e901";
+  color: #4066a5;
+  font-size:4vw;
+  margin-top:30vh;
+  margin-left:7vw;
+}
+
+h1{ 
+  font-family: Georgia;    /*The subscribe*/
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.7vw;
+  line-height: 0,44vh;
+  color: #131821;
+  margin-top:35vh;
+  margin-left:7vw;
+}
+
+h2{
+  font-family: Georgia;    
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.7vw;
+  line-height: 0,44vh;
+  color: #131821;
+  margin-top:2.5vh;
+  margin-left:7vw;
+  
+}
+
+.p1,.p2{                     
+  width: 22vw;
+  height: 5vh;
+  margin-top:1.7vh;
+  margin-left:7vw;
+} 
+                                                /*The box*/
+.box{
+  position:absolute;
+  width: 35vw; 
+  height: 7vh;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  background: #FFFFFF;
+  border: 1px solid #E3E3E4;
+  border-left: 4px solid #4066A5;
+}
+
+.box:hover{
+  border: 1px solid #4066A5; 
+  border-left: 4px solid #4066A5;
+  box-sizing: border-box;
+  box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+}
+
+.box:focus{
+  border: 1px solid #E3E3E4;
+  border-left: 4px solid #4066A5;
+  box-sizing: border-box;
+  box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+}
+
+input[type=text]{
+  border:none;
+  width:60%;
+  height:6.5vh;
+}
+
+input[type=text]::after{
+  border:none;
+  width:100%;
+}
+                                       /*placeholder*/
+#emailid{
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 4vh;
+  font-size:0.85vw;
+  margin-left:2vw;
+}
+
+button{
+  float:right;
+  width:30%;
+  height:6.5vh;
+  border:none;
+  background: #FFFFFF;
+}
+
+.icon-arrow:before {            
+  content: "\61";
+  padding:2vh;
+  padding-left:5vw;
+  opacity:0.3;
+}
+
+.icon-arrow:hover{
+  opacity:1.0;
+  color:#4066A5;
+}
+
+.term {                               /*I agree to terms*/
+  display:block;
+  position:relative;
+  margin-left: 7vw;
+  margin-top: 17vh;
+}
+
+.agree{
+  position:relative;
+  margin-left:9vw;
+  margin-top:17vh;
+}
+
+.agree > a{
+    color: #131821;
+}
+
+.agree > a:hover{
+  color: #4066A5;
+}
+
+.agree > a:active{
+  color: #233759;
+}
+                                    /* Hide the browser's default checkbox */
+.term input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+                                        /* Create a custom checkbox. */
+.icon-checkmark{
+  position: absolute;
+  height: 1.5vw;
+  width: 1.5vw;
+  background: #FFFFFF;
+  border: 1px solid #E3E3E4;
+  box-sizing: border-box;
+  border-radius: 0.3vh;
+} 
+
+                                            /* When the checkbox is checked, add a blue background */
+.term input:checked ~ .icon-checkmark {
+background: #4066A5;
+}
+                                      /* Create the checkmark/indicator (hidden when not checked) */
+.icon-checkmark:after {
+  padding:0.5vh;
+  margin-top:0.5vh;
+  margin-left:0.3vh;
+  content: "\63";
+  font-size:0.5vw;
+  display: none;
+  color: #fff; }
+                                          
+.term input:checked ~ .icon-checkmark:after {/* Show the checkmark when checked*/
+  display: block;
+}       
+
+hr{
+  width:20vw;
+  height:1px;
+  background: #E3E3E4;
+  opacity:30%;
+  margin-top:4.6vh;
+  margin-left:8vw;
+}
+  
+.icons{
+  display:block;
+  line-height:3vh;
+  font-size:0.6vw; 
+  margin-top:5vh;
+  margin-left:1vw; 
+}
+
+.icons>li{                   /*they were too far apart*/
+    margin:-0.5vw;
+}
+
+.icon-facebook:before { 
+  content: "\66";
+  padding:11px 13px 11px 13px;
+  border:solid 2px #E3E3E4;
+  border-radius:50%;
+}
+
+.icon-facebook:hover {
+  color:#FFFFFF;
+  padding-top:11px;
+  padding-bottom:11px;
+  border-radius:50%;
+  background-color: #4267B2;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.icon-facebook:active{
+  background-color: #2F4A80;
+}
+
+.icon-instagram:before {
+  content: "\69";
+  padding:11px;
+  border:solid 2px #E3E3E4;
+  border-radius:50%;
+}
+
+.icon-instagram:hover {
+  color:#FFFFFF;
+  background-color: #C13584;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+  padding-top:11px;
+  padding-bottom:11px;
+  border-radius:50%;
+}
+
+.icon-instagram:active{
+  background-color: #8F2762;
+}
+
+.icon-twitter:before {
+  content: "\74";
+  padding:11px;
+  border:solid 2px #E3E3E4;
+  border-radius:50%;
+}
+
+.icon-twitter:hover {
+  color:#FFFFFF;
+  padding-top:11px;
+  padding-bottom:11px;
+  border-radius:50%;background: #1DA1F2;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.icon-twitter:active{
+  background-color: #177FBF;
+}
+
+.icon-youtube:before {
+  content: "\79";
+  padding:11px;
+  border:solid 2px #E3E3E4;
+  border-radius:50%;
+}
+
+.icon-youtube:hover {
+  color:#FFFFFF;
+  padding-top:11px;
+  padding-bottom:11px;
+  border-radius:50%;
+  background: #FF0000;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.icon-youtube:active{
+  background-color: #CC0000;
+}
+
+/*should have a middle media too (1000-500px) to make the content readable but sadly no time */
+
+@media only screen and (max-width: 500px){
+  body{
+    font-size: 3vw;
+    line-height: 2.8vh;
+    color: #6A707B;
+  }
+
+  #background{
+    height:92vh;
+    width:150vw;
+    margin-top:8vh;
+  }
+
+  #base{ 
+    position:absolute;
+    height:45vh;
+    width:80vw;
+    margin:10vw;
+    margin-top:30vh;
+  }
+  
+  header{
+    position:absolute;
+    height:10vh;
+    margin-top:-8vh;
+  }
+  
+  header>ul>li{
+    margin:2vw;
+  }
+
+  .icon-pineapple:before{
+    display:none;
+  }  
+
+  .icon-Union-good:before{
+    font-size:4.5vh;
+    margin-left:-1vw;
+    margin-right:10vw;
+  }
+  #v2{
+    margin-top:4vh;
+  }
+  .icon-Cup:before {
+    font-size:15vw;
+    margin-left:5vw;
+  }
+  h1{ 
+    font-size:6vw;
+    margin-top:4.5vh;
+    margin-left:5vw;
+  }
+  h2{
+    font-size: 6vw;
+    margin-top:4.5vh;
+    margin-left:5vw;
+    
+  }
+
+  .p1{                   
+    width: 55vw;
+    height: 5vh;
+    margin-top:2.5vh;
+    margin-left:5vw;
+  } 
+
+  .p2{
+    width: 65vw;
+    height: 5vh;
+    margin-top:2.5vh;
+    margin-left:5vw;
+  }
+
+  .box{
+    position:absolute;
+    width: 70vw; 
+    height: 7vh;
+    margin-left: 5vw;
+    margin-top: 4vh;
+  }
+
+  #emailid{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 4vh;
+    font-size:3.5vw;
+    margin-left:2vw;
+  }
+
+  button{
+    width:20%;
+  }
+  
+  .icon-arrow:before {            
+    padding:2vh;
+    padding-left:6vw;
+  }
+
+  .icon-checkmark{
+    height: 6vw;
+    width: 6vw;
+  } 
+
+  .icon-checkmark:after {
+    font-size:3vw;
+  }
+
+  .term {                               
+    margin-left: 5vw;
+    margin-top: 13vh;
+  }
+
+  .agree{
+    margin-left: 14vw;
+    margin-top:13.5vh;
+    font-size:3.5vw;
+  }
+
+  hr{
+    margin-top:3vh;
+    margin:5vw;
+    width:70vw;
+
+  }
+  .icons{
+    margin-top:3.5vh;
+    font-size:3.5vw;
+  }
+
+}

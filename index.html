@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pineapple</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+</head>
+<body>
+        <header>
+            <ul>
+                <li><span class="icon-Union-good"></span></li>
+                <li><span class="icon-pineapple"></span></li>
+                <li><a href="#">About</a></li> 
+                <li><a href="#">How it works</a></li> 
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div id="base">
+            <div id="v2">
+                <span class="icon-Cup"></span>
+                <h2 >Thanks for subscribing!</h2>
+                <p class="p2">You have succesfully subscribed to our email listing. Check your email for the discount code.</p>
+            </div>
+            <div id="v1">
+                <h1 >Subscribe to newsletter</h1>
+                <p class="p1">Subscribe to our newsletter and get 10% discount on pineapple glasses.</p>
+                <div class="box" >
+                    <form action="emails.php" method="POST" id = "formid" onsubmit= "return Validation()" target="_blank"><!--for the user to stay on the same page -->
+                        <input type="text" id="emailid" name="email" placeholder="Type your email address here ..." >
+                        <button type="submit" id="buttonid" ><i class="icon-arrow"></i></button>
+                    </form>
+                </div>
+                <label class="term"><input type="checkbox" method="POST" id="checkmark" name="checkmark"><span class="icon-checkmark"></span> </label><p class="agree">I agree to <a href="#">terms of service</a></p> 
+            </div>
+            <hr>
+            <ul class="icons">
+                <li ><a href="#"><span class="icon-facebook"></span></a></li>
+                <li ><a href="#"><span class="icon-instagram"></span></a></li>
+                <li ><a href="#"><span class="icon-twitter"></span></a></li>
+                <li ><a href="#"><span class="icon-youtube"></span></a></li>
+            </ul> 
+        </div>
+        <div>
+            <img src="img/image_summer.jpg" alt="pineapples enjoying life" id="background">
+        </div>
+</body>
+</html> 
